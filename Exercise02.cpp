@@ -4,6 +4,7 @@ using namespace std;
 
 int main() {
   
+  Box box1;
    // 1. Create a Box type object called box1
   
   
@@ -25,6 +26,33 @@ int main() {
    cout << "Box Width " << box1.getWidth() << endl;
    cout << "Volume of Box is " << box1.calcVolume() << endl;
    // ==========================================
-      return 0;
+
+   box1.setLength(length);
+   box1.setWidth(width);
+   box1.setHeight(height);
+
+   return 0;
+}
+#include <iostream>
+#include "Box.h"
+using namespace std;
+
+int main()
+{
+    Box box1;
+    int length, width, height;
+
+    cout<< "Enter Length of box : ";
+    cin >> length;
+    cout << "Enter width of box : ";
+    cin >> width;
+    cout << "Enter Height of box : ";
+    cin >> height;
+
+    box1.setLength(length);
+    box1.setWidth(width);
+    box1.setHeight(height);
+
+ 
 }
 
